@@ -43,7 +43,7 @@ model = Sequential([
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 model.summary()
 
-num_epochs = 10
+num_epochs = 20
 # Train the model
 model.fit(x_train, x_train, epochs=num_epochs, batch_size=256, shuffle=True, validation_data=(x_test, x_test))
 
